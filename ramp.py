@@ -1,3 +1,4 @@
+import pandas as pd
 df = pd.read_csv('/Users/tchowdhury/Downloads/data.txt')
 df['transaction_amount'] = df.transaction_amount.astype(float)
 df['transaction_time'] = pd.to_datetime(df.transaction_time).dt.date
